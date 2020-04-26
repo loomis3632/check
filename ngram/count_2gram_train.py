@@ -174,5 +174,6 @@ def model_2gram_train(rootdir):
 
 
 if __name__ == '__main__':
-    rootdir = ''
+    # rootdir = r'E:\dataset\语料\zhcrosscorpus.txt'
+    rootdir = r'E:\dataset\语料'
     model_2gram_train(rootdir)

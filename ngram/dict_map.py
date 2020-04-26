@@ -98,8 +98,6 @@ def dict_map_train(data_dir):
     path_lists = get_all_path(data_dir)
     count = 0
     for path in path_lists:
-        # path = r"E:\zhcrosscorpus\zhcrosscorpus.txt"
-        # path = r"E:\pycharm_project\l_ngram\data\test\test1.txt"
         coding = get_encoding(path)
         dict_map = load_variable(BASE_DIR + '/model/dict_map.txt')  # 加载已保存的映射
         with open(path, "r", encoding=coding, errors="ignore") as f:
@@ -113,5 +111,6 @@ def dict_map_train(data_dir):
 
 
 if __name__ == '__main__':
-    data_dir = r''
-    dict_map_train(data_dir)
+    # rootdir = r'E:\dataset\语料\zhcrosscorpus.txt'
+    rootdir = r'E:\dataset\语料'
+    dict_map_train(rootdir)
